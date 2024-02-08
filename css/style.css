@@ -1,748 +1,708 @@
-body {
-    transition-duration: 1s !important;
-    background-color: rgb(213, 213, 213) !important;
-}
-
-
-
-
-
-
-
-/* nav */
-.nav,
-.navbar {
-    background-color: rgb(235, 235, 235) !important;
-    padding-left: 10px !important;
-
-    transition-duration: 0.5s !important;
-    opacity: 0.4;
-}
-
-.nav:hover,
-.navbar:hover {
-    opacity: 1 !important;
-}
-
-
-
-.btnnd {
-
-    display: inline !important;
-    text-align: center !important;
-}
-
-.btnn {
-    background-color: rgba(88, 80, 80, 0) !important;
-    border-color: gray !important;
-    color: gray !important;
-
-}
-
-.btnn:hover {
-    background-color: black !important;
-    border-color: rgba(213, 203, 183, 255) !important;
-    color: white !important;
-}
-
-.logb:hover {
-    background-color: rgb(44, 60, 245) !important;
-}
-
-.image {
-    border: 1px solid gray;
-    border-radius: 100%;
-}
-
-.btnnsearch {
-    border-color: gray !important;
-    color: gray !important;
-}
-
-.btnnsearch:hover {
-    background-color: green !important;
-    border-color: green !important;
-    color: white !important;
-}
-
-.iconn {
-    text-align: center;
-    font-size: 60px;
-    margin-bottom: 10%;
-    transition: 0.2s;
-}
-
-.fst {
-    margin-top: 5%;
-}
-
-.iconn:hover {
-    font-size: 70px;
-    margin-bottom: 6%;
-}
-
-.smedia {
-    text-decoration: none !important;
-}
-
-.icon:hover+.titlemedia {
-    font-size: 40px !important;
-}
-
-.cimg {
-    width: 100%;
-    height: 100vh;
-    filter: blur(1px);
-    filter: grayscale(100%);
-    transition-duration: 0.5s;
-}
-
-.carousel-item:hover .cimg {
-    filter: grayscale(0%);
-}
-
-.x {
-    height: 100vh !important;
-    width: 100%;
-    overflow-wrap: normal;
-}
-
-
-
-/* carousel */
-
-.qheader {
-    color: rgb(167, 125, 47) !important;
-    font-size: 32px !important;
-}
-
-.btnli {
-    background-color: black !important;
-}
-
-.exit:hover {
-    color: black !important;
-}
-
-.box {
-    width: 60%;
-    height: 20vh;
-    background-color: rgba(0, 0, 0, 0.514);
-    border-radius: 10%;
-    margin: auto;
-    text-align: center;
-
-}
-
-
-/* scrollbar */
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-::-webkit-scrollbar:hover {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: grey;
-    border-radius: 0px;
-
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: white;
-    border-radius: 2px;
-
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(216, 216, 216);
-    border-radius: 2px;
-
-}
-
-::-webkit-scrollbar-thumb:active {
-    background-color: rgb(199, 199, 199);
-    border-radius: 2px;
-
-}
-
-
-
-/* about us */
-
-.us {
-    height: 40vh;
-
-}
-
-.ustext {
-    overflow: auto;
-    height: 165px;
-
-    scroll-behavior: smooth;
-
-}
-
-.usborder {
-    border: 2px solid black;
-    border-radius: 7px;
-    height: 180px;
-    padding: 10px;
-
-}
-
-.boxe {
-    box-shadow: 0px 0px 20px 1px !important;
-}
-
-
-.ussep {
-    height: 120px;
-    text-align: center;
-    padding: 20px;
-}
-
-.ussep h2 {
-    transition-duration: 0.2s;
-    font-size: 60px !important;
-    position: relative;
-}
-
-.ussep .h2d {
-    transition-duration: 0.2s;
-    font-size: 60px !important;
-    position: relative;
-    height: 80px;
-}
-
-.ussep .h2d::before {
-    content: "";
-    position: absolute;
-    width: 0px;
-    height: 0px;
-    z-index: 1;
-    left: 50%;
-    bottom: 0px;
-    background-color: gray;
-    transition-duration: 0.7s;
-}
-
-.ussep .h2d:hover::before {
-    content: "";
-    position: absolute;
-    width: 30%;
-    height: 4%;
-    z-index: 1;
-    left: 35%;
-    bottom: 0px;
-    background-color: rgb(167, 125, 47);
-}
-
-
-.ussep h2:hover {
-    font-size: 61px !important;
-    color: rgb(167, 125, 47);
-    cursor: help;
-}
-
-.questions {
-    border: 2px solid black;
-    padding: 10px 50px !important;
-    margin: 100px;
-    border-radius: 5px;
-    height: 95vh;
-    background-color: white;
-}
-
-.acccolor {
-    color: white !important;
-}
-
-.submit {
-    margin-top: 10px;
-    text-align: center;
-}
-
-.test {
-    position: relative;
-}
-
-.test::after {
-    content: "";
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    z-index: -1;
-    right: -100px;
-    top: -50px;
-    background-color: gray;
-}
-
-.test::before {
-    content: "";
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    z-index: -1;
-    left: -100px;
-    bottom: -50px;
-    background-color: gray;
-}
-
-
-.separator {
-    background-image: url(../images/Massimo\ Dutti_\ Men’s\ Edit\ _\ Map\ for\ Tomorrow.jpeg);
-    background-attachment: fixed;
-    height: 30vh;
-    background-size: cover;
-
-    filter: grayscale(100%);
-
-}
-
-.separator2 {
-    background-image: url(../images/background.jpeg);
-    background-attachment: fixed;
-    height: 30vh;
-    background-size: cover;
-
-
-}
-
-.space {
-    width: 100%;
-    height: 160px;
-}
-
-.cardEditText {
-    position: relative;
-    transition-duration: 0.2s !important;
-
-}
-
-.cardEdit {
-    transition-duration: 0.2s;
-    box-shadow: 0px 0px 20px 1px !important;
-}
-
-.cardEdit:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 40px 1px !important;
-}
-
-.cardEditText::after {
-    position: absolute;
-    content: "";
-
-    height: 0%;
-    width: 0%;
-
-    bottom: 0;
-    left: 0;
-    transition: 0.5s;
-    background-color: rgba(255, 255, 255, 0.26);
-    opacity: 1;
-}
-
-.cardEditText::before {
-    position: absolute;
-    content: "";
-
-    height: 0%;
-    width: 0%;
-
-    top: 0;
-    right: 0;
-    transition: 0.5s;
-    background-color: rgba(0, 0, 0, 0.411);
-    opacity: 1;
-}
-
-.cardEdit:hover .cardEditText::after {
-    height: 100%;
-    width: 100%;
-
-}
-
-.cardEdit:hover .cardEditText::before {
-    height: 100%;
-    width: 100%;
-    pointer-events: none;
-}
-
-#list-item-1,
-#list-item-2,
-#list-item-3,
-#list-item-4 {
-    scroll-margin-top: 50vh !important;
-}
-
-
-
-
-
-/* news */
-
-.newsHeader {
-    font-size: 43px;
-
-}
-
-
-
-
-.cardMe {
-    width: 100%;
-    max-height: 60vh;
-    overflow: hidden;
-    background-color: black;
-    padding: 40px;
-    border: 10px solid rgb(201, 201, 201);
-    color: white;
-}
-
-.cardText {
-    transition-duration: 0.2s;
-}
-
-.cardImage {
-    transform: translate(50px, -60px) rotate(7deg);
-    transition-duration: 0.2s;
-    width: 600px;
-    height: 800px;
-    ;
-}
-
-.cardImage2 {
-    transform: translate(-80px, -150px) rotate(-7deg);
-    transition-duration: 0.2s;
-    width: 500px;
-    height: 600px;
-}
-
-.cardMe:hover .cardImage {
-    transform: translate(46px, -60px) rotate(7deg);
-}
-
-
-.cardMe:hover .cardImage2 {
-    transform: translate(-70px, -150px) rotate(-7deg);
-
-}
-
-.cardMe:hover .cardText {
-    transform: scale(1.01);
-}
-
-#latestNews {
-    scroll-margin-top: 50vh;
-}
-
-.cardText2 {
-    transform: scale(1) !important;
-}
-
-.cardMe:hover .cardText2 {
-    transform: scale(1.01) !important;
-}
-
-.contc {
-    width: 100%;
-    height: 70vh;
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 0px !important;
-    transition-duration: 0.2s;
-}
-
-.outerc {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-    transition: transform 0.2s;
-}
-
-
-.contc:hover {
-    transform: scale(0.95);
-}
-
-.outerc:hover {
-    transform: scale(1.08);
-}
-
-.outerc1,
-.outerc2,
-.outerc3 {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.outerc1 {
-    background-image: url(../images/shorbagy.jpg);
-}
-
-.outerc2 {
-    background-image: url(../images/zain.jpg);
-}
-
-.outerc3 {
-    background-image: url(../images/Kimo.jpeg);
-}
-
-.innerc {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.326);
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    text-align: center;
-    color: rgba(255, 255, 255, 0);
-    
-}
-
-.innerc h2,
-.innerc p {
-    font-size: 20px;
-    transition-duration: 0.2s;
-    opacity: 0;
-}
-.innerc h2
-{
-    margin-top: 40px;
-}
-.innerc:hover p
-{
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.616);
-    opacity: 1;
-}
-.innerc:hover h2 {
-    font-size: 17.5px;
-    color: rgba(255, 255, 255, 0.616);
-    opacity: 1;
-}
-
-
-
-.photoc {
-    border-radius: 100%;
-    width: 45%;
-    height: 30%;
-    background-color: aqua;
-}
-
-.photoc1
-{
-    background-image: url(../images/shorbagy2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.photoc2
-{
-    background-image: url(../images/zain2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.photoc3
-{
-    background-image: url(../images/Kimo2.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-/* .footer
-{
-    width: 100%;
-    height: 40vh;
-    background-color: black;
-    text-align: center;
-    
-}
-.control
-{
-    transition-duration: 0.2s;
-    word-spacing: 40px;
-    font-size: 30;
-    line-height: 3;
-    border-radius: 5px;
-}
-.control a
-{
-    transition-duration: 0.2s;
-    color: white;
-    margin: 0 15 0 15;
-}
-.footer p
-{
-    transition-duration: 0.2s;
-    color: white;
-}
-.foot
-{
-    margin-top: 20px;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    border: 2px solid white;
-    transition-duration: 0.2s;
-}
-
-.foot:hover , .footer p:hover
-{ 
-    transform: scale(1.2);
-} */
-
-.foot a
-{
-    text-decoration: none;
-}
-
-.foot a:hover
-{
-    color: rgb(101, 101, 101) !important;
-}
-.foet
-{
-    width: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-@media(max-width: 480px) {
-    .ussep .h2d:hover::before {
-        content: "";
-        position: absolute;
-        width: 0%;
-        height: 0%;
-        z-index: 1;
-        left: 35%;
-        bottom: 0px;
-        background-color: rgb(167, 125, 47);
-    }
-    .ussep .h2d {
-        transition-duration: 0.2s;
-        font-size: 20px !important;
-        position: relative;
-        height: 120px;
-    }
-
-    .ussep h2 {
-        transition-duration: 0.2s;
-        font-size: 40px !important;
-
-    }
-
-    .ussep h2:hover {
-        transition-duration: 0.2s;
-        font-size: 41px !important;
-
-    }
-
-    .questions {
-        height: 111vh;
-    }
-
-    .test {
-        position: relative;
-    }
-
-    .test::after {
-        content: "";
-        position: absolute;
-        width: 400px;
-        height: 400px;
-        z-index: -1;
-        right: 100px;
-        top: 50px;
-        background-color: gray;
-    }
-
-    .test::before {
-        content: "";
-        position: absolute;
-        width: 400px;
-        height: 400px;
-        z-index: -1;
-        left: 100px;
-        bottom: 50px;
-        background-color: gray;
-    }
-
-    .cardMe {
-        max-height: 100vh;
-        overflow: hidden;
-        padding: 20px;
-    }
-
-    .cardText {
-        transform: translateY(-190px) scale(0.8) !important;
-
-    }
-
-    .cardImage {
-        transform: translate(0px, -0px);
-        transition-duration: 0.2s;
-        width: 600px;
-        height: 300px;
-        transform: rotate(0deg) !important;
-        overflow: hidden;
-    }
-
-    .cardImage2 {
-        transition-duration: 0.2s;
-        width: 600px;
-        height: 400px;
-        transform: rotate(0deg);
-        overflow: hidden;
-        transform: translate(0px, -120px) !important;
-    }
-
-    .cardMe:hover .cardImage {
-        transform: translate(0px, 0px);
-    }
-
-
-    .cardMe:hover .cardImage2 {
-        transform: translate(0px, 0px);
-    }
-
-    .cardMe:hover .cardText {
-        transform: translateY(-190px) scale(0.9) !important;
-    }
-
-    .cardText2 {
-        transform: translateY(-290px) scale(0.8) !important;
-    }
-
-    .cardMe:hover .cardText2 {
-        transform: translateY(-290px) scale(0.9) !important;
-    }
-    .special
-    {
-        font-size: 20px !important;
-    }
-}
+<!DOCTYPE html>
+<html>
+<header>
+
+    <title>AK Boutique</title>
+
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</header>
+
+<body>
+
+
+
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top position-fixed ">
+        <div class="container-fluid nav">
+            <a class="navbar-brand " href="#">
+                <img class="image" src="images/aklogo3.png" alt="2AK Boutique" width="50" height="39">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            News
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#LatestNews">Latest Drops</a></li>
+                            <li><a class="dropdown-item" href="#FashionTrend">Fashion Trends</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Discounts</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success btnnsearch" type="submit">Search</button>
+                </form>
+
+                <div class="col-sm-1 col-lg-2 btnnd">
+                    <button class="btn btn-primary m-1 btnn" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">More About
+                        Us</button>
+
+                    <button type="button " class=" logb btn btn-primary btnn  m-1" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        Log In
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- sign in -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Log In</h1>
+                    <button type="button" class="btn-close exitt" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">Make sure that you signed Up using this email.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary btnn">Sign Up</button>
+                    <button type="submit" class="btn btn-primary btnn logb">Log In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- off canvas -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Feel free to follow these links</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <a class="smedia" href="">
+                <p class="iconn fst"><i class="fa-brands fa-facebook"></i><span class="titlemedia">Facebook </span></p>
+            </a>
+            <a class="smedia" href="">
+                <p class="iconn text-danger"><i class="fa-brands fa-instagram"></i><span class="titlemedia">Insta</span>
+                </p>
+            </a>
+            <a class="smedia" href="">
+                <p class="iconn text-info-emphasis"><i class="fa-brands fa-twitter"></i><span
+                        class="titlemedia">Twitter</span></p>
+            </a>
+            <a class="smedia" href="">
+                <p class="iconn text-warning-emphasis"><i class="fa-brands fa-snapchat"></i><span
+                        class="titlemedia">Snapchat</span></p>
+            </a>
+            <a class="smedia" href="">
+                <p class="iconn text-success"><i class="fa-brands fa-whatsapp"></i><span
+                        class="titlemedia">whatsapp</span></p>
+            </a>
+        </div>
+
+    </div>
+
+
+    <!-- carousel -->
+
+    <div class=" containere">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators  ">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/fashion2.png" class=" d-block w-100 cimg" alt="Fashion Trends">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="box">
+                            <h5 class="qheader">Excited about some fashion trends?</h5>
+                            <p>we got you covered with our latest fashion trends</p>
+                            <button class="slidesb btn btn-primary m-1 btnn">know more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="images/sale.jpeg" class="d-block w-100 cimg" alt="sale">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="box">
+                            <h5 class="qheader">Quickly Get It Before It Ends!!</h5>
+                            <p>our sales are up to 70% so buy now before it ends</p>
+                            <button class="slidesb btn btn-primary m-1 btnn">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/drops.jpeg" class="d-block w-100 cimg" alt="Latest drop">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="box">
+                            <h5 class="qheader">Our latest drops:</h5>
+                            <p>One of our latest drops is the brand new NIKE AIR FORCE OFF-WHITE</p>
+                            <button class="slidesb btn btn-primary m-1 btnn">Buy Now </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <!-- about us -->
+    <div class="container questions test boxe">
+        <div class="ussep">
+            <div class="h2d">
+                <h2>Why Choose Us?</h2>
+            </div>
+        </div>
+
+
+
+        <div class="bd-example">
+            <div class="row usborder">
+                <div class="col-4">
+                    <div id="list-example" class="list-group">
+                        <a class="list-group-item list-group-item-action bg-light border-dark" href="#list-item-1"
+                            style="color: black">Fashion</a>
+                        <a class="list-group-item list-group-item-action bg-light border-dark" href="#list-item-2"
+                            style="color: black">Shipping</a>
+                        <a class="list-group-item list-group-item-action bg-light border-dark" href="#list-item-3"
+                            style="color: black">Original</a>
+                        <a class="list-group-item list-group-item-action active bg-light border-dark"
+                            href="#list-item-4" style="color: black;">Shopping</a>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+                        class="scrollspy-example ustext" tabindex="0">
+                        <h4 id="list-item-1">Global Fashion at Your Doorstep:</h4>
+                        <p>Embrace the world of fashion without borders with our online clothing store. We curate a
+                            diverse
+                            collection of clothing items from international brands, bringing you the latest trends and
+                            styles from around the globe. At our website, you can explore and shop for unique pieces
+                            that
+                            reflect the rich tapestry of global fashion, all from the comfort of your home.
+                            <br><br><br><br>
+                        </p>
+                        <h4 id="list-item-2">Affordable International Shipping:</h4>
+                        <p>Say goodbye to hefty shipping fees! We understand the importance of accessible fashion, and
+                            that's why we offer affordable international shipping to your doorstep. Enjoy the
+                            convenience of
+                            having fashion-forward pieces delivered straight to you without breaking the bank. We
+                            prioritize
+                            cost-effective shipping methods to ensure that you get your favorite styles without the
+                            burden
+                            of excessive shipping charges. <br><br><br><br></p>
+                        <h4 id="list-item-3">Original Brand Quality, Guaranteed:</h4>
+                        <p>Quality is our top priority. When you shop with us, you can rest assured that you're
+                            receiving
+                            original brand items of the highest quality. We source our clothing directly from reputable
+                            international brands, providing you with the assurance of authenticity. Our commitment to
+                            original brand quality extends to every product in our collection, giving you the confidence
+                            to
+                            express your style with genuine, top-notch fashion. <br><br><br><br></p>
+                        <h4 id="list-item-4">Effortless Shopping Experience:</h4>
+                        <p>Discover a seamless and user-friendly online shopping experience on our website. Navigate
+                            through
+                            our thoughtfully curated categories, explore the latest arrivals, and find the perfect
+                            additions
+                            to your wardrobe with ease. Our website is designed to enhance your shopping journey,
+                            allowing
+                            you to browse, select, and purchase your favorite pieces effortlessly, all within a few
+                            clicks.
+                            <br><br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Accordion -->
+
+        <div class="ussep">
+            <div class="h2d">
+                <h2 class="display-1 mb-1 special">Frequently Asked Questions</h2>
+            </div>
+        </div>
+
+
+        <div class="accordion " id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button acccolor bg-secondary collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                        aria-controls="collapseOne">
+                        What payment methods do you accept?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        We accept a variety of payment methods, including credit/debit cards (Visa,
+                        MasterCard,
+                        American Express), PayPal, and bank transfers. You can select your preferred payment option
+                        during the checkout process.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-secondary  acccolor " type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo">
+                        Can I modify my order after it has been placed?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Unfortunately, once an order has been placed, we are unable to modify it. Please double-check
+                        your order before confirming the purchase. If you need assistance, please contact our customer
+                        support team for guidance.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button acccolor bg-secondary collapsed " type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree">
+                        How can I place an order on your website?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Placing an order is easy! Simply browse our products, add the items you want to your cart, and
+                        proceed to checkout. Follow the instructions to provide shipping details and payment
+                        information. Once your order is confirmed, you'll receive an email with the order summary.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="submit">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                class="btn btn-outline-secondary">Ask a question</button>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">please enter your message and then submit</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">your question goes here</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-bs-container="body" data-toggle="popover"
+                        title="it's important for us to know what email we can contact you in" data-content="">
+                        why do we need your email?
+                    </button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exx">
+                        Save and send
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exx" tabindex="-1" aria-labelledby="exx" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exx">Message sent successfully</h1><br>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer">
+                    <div class="float-end">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="separator"></div>
+    <div class="ussep"></div>
+
+
+
+
+    <!-- cards -->
+    <div class="ussep">
+        <div class="h2d">
+            <h2>Our Top Sales</h2>
+        </div>
+    </div>
+
+    <div class="container cardsCont m-auto mb-5 ">
+        <div class="row col-12 justify-content-around m-auto gap-5">
+            <div class="card col-lg-4 col-md-6 col-sm-12 cardEdit" style="width: 18rem;">
+                <div class="cardEditText">
+                    <img src="images/MAN-ic Monday.jpeg" class=" card-img-top" alt="black hoodie">
+                </div>
+                <div class="card-body ">
+                    <h5 class="card-title">Supreme</h5>
+                    <p class="card-text">Supreme black hoodie</p>
+                    <a href="#" class="btn btn-primary"><s>399$</s> 299$</a>
+                </div>
+            </div>
+            <div class="card col-lg-4 col-md-6 col-sm-12 cardEdit" style="width: 18rem;">
+                <div class="cardEditText">
+                    <img src="images/download.jpeg " class=" card-img-top" alt="grey T-shirt">
+                </div>
+                <div class="card-body ">
+                    <h5 class="card-title">LFDY</h5>
+                    <p class="card-text">Basic wafel long sleeves + loose jogger</p>
+                    <a href="#" class="btn btn-primary"><s>799$</s> 499$</a>
+                </div>
+            </div>
+            <div class="card col-lg-4 col-md-6 col-sm-12 cardEdit" style="width: 18rem;">
+                <div class="cardEditText">
+                    <img src="images/milatarypants.png " class=" card-img-top" alt="...">
+                </div>
+                <div class="card-body ">
+                    <h5 class="card-title">LFDY</h5>
+                    <p class="card-text">Army cargo</p>
+                    <a href="#" class="btn btn-primary"><s>449$</s> 399$</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="cardsep m-5"></div>
+        <div class="row col-12 justify-content-around m-auto gap-5">
+            <div class="card col-lg-4 col-md-6 col-sm-12 cardEdit" style="width: 18rem;">
+                <div class="cardEditText">
+                    <img src="images/Grey _ S.png" class=" card-img-top" alt="black hoodie">
+                </div>
+                <div class="card-body ">
+                    <h5 class="card-title">Essintial</h5>
+                    <p class="card-text">Basic grey hoodie</p>
+                    <a href="#" class="btn btn-primary">399$</a>
+                </div>
+            </div>
+            <div class="card col-lg-4 col-md-6 col-sm-12 cardEdit" style="width: 18rem;">
+                <div class="cardEditText">
+                    <img src="images/whitehoodie.png" class="card-img-top" alt="grey T-shirt">
+                </div>
+                <div class="card-body ">
+                    <h5 class="card-title">For Never</h5>
+                    <p class="card-text">Basic turtle-neck long sleeves</p>
+                    <a href="#" class="btn btn-primary">299$</a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+    <div class="separator2"></div>
+
+
+
+
+    <!-- news -->
+
+    <div class="space"></div>
+    <div class="container">
+        <div class="row">
+            <div class="ussep col-12">
+                <div class="h2d">
+                    <h2 id="LatestNews">Latest News</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="boxe">
+                    <div class="cardMe col-12">
+                        <div class="row">
+                            <div class="cardText col-md-8 col-sm-12 order-md-1 order-2">
+
+                                <h5 class="card-title newsHeader">PREDATOR ACCURACY.1 FIRM GROUND BOOTS</h5>
+                                <p class="card-text">Lace up and feel ready for action in the Predator Accuracy.1 Firm
+                                    Ground Boots. With a legacy of supporting players when it matters the most, these
+                                    boots
+                                    are designed to give you the confidence to create game-defining moments. High
+                                    definition, strategically-placed grip technology is positioned across strike zones
+                                    to
+                                    help support accurate ball spin and placement. A HYBRIDTOUCH upper provides a
+                                    moulded
+                                    fit with cushioning in key contact areas for comfort and a soft touch on the ball,
+                                    while
+                                    FACETFRAME split tooling is designed to optimize power transfer for the perfect
+                                    strike.
+                                    Made with a series of recycled materials, this upper features at least 50% recycled
+                                    content. This product represents just one of our solutions to help end plastic
+                                    waste.
+                                </p>
+                                <p class="card-text text-white-50"><small>Last updated 3 mins ago</small></p>
+                                <button type="button" class="btn btn-outline-light">Know more <i
+                                        class="fa-solid fa-question"></i></button>
+
+                            </div>
+                            <div class="cardImage col-md-4 col-12 order-md-2 order-1">
+                                <img src="images/card.jpeg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="space" id="FashionTrend"></div>
+        <div class="container">
+
+            <div class="row">
+                <div class="boxe">
+                    <div class="cardMe col-12">
+                        <div class="row">
+
+                            <div class="cardImage2 col-md-4 col-12">
+                                <img src="images/GW4571_HM3_hover.agv.avif" class="img-fluid rounded-start" alt="..."
+                                    style="height: 100%; width: 100%;">
+                            </div>
+
+                            <div class="cardText cardText2 col-md-8 col-sm-12">
+
+                                <h5 class="card-title newsHeader">PREDATOR ACCURACY.1 FIRM GROUND BOOTS</h5>
+                                <p class="card-text">Lace up and feel ready for action in the Predator Accuracy.1 Firm
+                                    Ground Boots. With a legacy of supporting players when it matters the most, these
+                                    boots
+                                    are designed to give you the confidence to create game-defining moments. High
+                                    definition, strategically-placed grip technology is positioned across strike zones
+                                    to
+                                    help support accurate ball spin and placement. A HYBRIDTOUCH upper provides a
+                                    moulded
+                                    fit with cushioning in key contact areas for comfort and a soft touch on the ball,
+                                    while
+                                    FACETFRAME split tooling is designed to optimize power transfer for the perfect
+                                    strike.
+                                    Made with a series of recycled materials, this upper features at least 50% recycled
+                                    content. This product represents just one of our solutions to help end plastic
+                                    waste.
+                                </p>
+                                <p class="card-text text-white-50"><small>Last updated 3 mins ago</small></p>
+                                <button type="button" class="btn btn-outline-light">Know more <i
+                                        class="fa-solid fa-question"></i></button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="space"></div>
+
+
+
+        <div class="ussep">
+            <h2>Founders of AK-boutique</h2>
+        </div>
+        <div class="space" style="height: 100px;"></div>
+        <!-- credit -->
+        <div class="container">
+            <div class="row justify-content-between">
+                <!-- Haitham -->
+                <div class="contc col-12 col-md-6 col-lg-3 boxe m-lg-2 mb-4 ">
+                    <div class="outerc outerc1  ">
+                        <div class="innerc">
+                            <h2 class="h2c">
+                                Mr. A.Haitham El-Shorbagy
+                            </h2>
+                            <div class="space"></div>
+                            <div class="photoc photoc1"></div>
+                            <p>feel free to follow their social media. <i class="fa-solid fa-thumbs-up"></i></p>
+                            <p class="pc"><a href=""><i class="fa-brands fa-linkedin-in"></i></a> <a href=""><i
+                                        class="fa-brands fa-x-twitter"></i></a> <a href=""><i
+                                        class="fa-solid fa-envelope"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- me -->
+                <div class="contc col-12 col-md-6 col-lg-3 boxe m-2">
+                    <div class="outerc outerc2  ">
+                        <div class="innerc">
+                            <h2 class="h2c">
+                                Mr. A.Zain El-dim
+                            </h2>
+                            <div class="space"></div>
+                            <div class="photoc photoc2"></div>
+                            <p>feel free to follow their social media. <i class="fa-solid fa-thumbs-up"></i></p>
+                            <p class="pc"><a href=""><i class="fa-brands fa-linkedin-in"></i></a> <a href=""><i
+                                        class="fa-brands fa-x-twitter"></i></a> <a href=""><i
+                                        class="fa-solid fa-envelope"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Karim -->
+                <div class="contc col-12 col-md-6 col-lg-3 boxe m-2">
+                    <div class="outerc outerc3  ">
+                        <div class="innerc">
+                            <h2 class="h2c">
+                                Mr. Karim Ahmed
+                            </h2>
+                            <div class="space"></div>
+                            <div class="photoc photoc3"></div>
+                            <p>feel free to follow their social media. <i class="fa-solid fa-thumbs-up"></i></p>
+                            <p class="pc"><a href=""><i class="fa-brands fa-linkedin-in"></i></a> <a href=""><i
+                                        class="fa-brands fa-x-twitter"></i></a> <a href=""><i
+                                        class="fa-solid fa-envelope"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    <div class="space"></div>
+
+    <!-- </div>
+<div class="footer">
+    <img src="images/aklogo3.png" alt="" class="foot" width="90" height="90" draggable="false"><br>
+    <span class="control" style="font-size: 40px;"><a href="" class="linkteam"><i class="fa-brands fa-facebook"></i></a>
+    <a href="" class="linkteam"><i class="fa-brands fa-twitter"></i></a>
+    <a href="" class="linkteam"><i class="fa-brands fa-linkedin"></i></a></span>
+    <p>COPYRIGHT © 2023 . ALL RIGHT RESERVED BY AHMED</p>
+</div>
+ -->
+
+    <footer class="bg-dark text-light foot">
+        <div class="containere py-4 p-4">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Home</a></li>
+                        <li><a href="#" class="text-light">Shop</a></li>
+                        <li><a href="#" class="text-light">Contact</a></li>
+                        <li><a href="#" class="text-light">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5>Connect With Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#" class="text-light"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#" class="text-light"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5>Subscribe to Newsletter</h5>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <button type="submit" class="btn btn-light m-2">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3">
+            <p>&copy; 2024 AK Boutique. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+
+</body>
+
+</html>
