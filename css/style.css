@@ -632,7 +632,7 @@ body {
 
 
 
-@media(max-width:800px) {
+@media(max-width: 480px) {
     .ussep .h2d:hover::before {
         content: "";
         position: absolute;
@@ -642,6 +642,12 @@ body {
         left: 35%;
         bottom: 0px;
         background-color: rgb(167, 125, 47);
+    }
+    .ussep .h2d {
+        transition-duration: 0.2s;
+        font-size: 20px !important;
+        position: relative;
+        height: 120px;
     }
 
     .ussep h2 {
