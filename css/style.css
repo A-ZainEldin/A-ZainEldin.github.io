@@ -1,6 +1,7 @@
 body {
     transition-duration: 1s !important;
     background-color: rgb(213, 213, 213) !important;
+    overflow-x: hidden;
 }
 
 
@@ -584,15 +585,251 @@ body {
 
 
 
+.write::before { 
+    content: "|"; 
+    animation: anime infinite 0.7s; 
+} 
+@keyframes anime {
+    0%{
+        content: "|";
+        opacity: 0;
+    }
 
+    50%{
+        content: "|";
+        opacity: 100%;
+    }
+}
 
+.textanimation
+{
+    color:rgb(167, 125, 47);
+}
+.textanimation::before { 
+    content: ""; 
+    animation: animate infinite 15s; 
+    padding-left: 10px; 
+} 
 
+@keyframes animate { 
+    0%
+    {
+        content: "";
+    }
 
+    2%
+    {
+        content: "A";
+    }
+    3%
+    {
+        content: "A.";
+    }
+    4%
+    {
+        content: "A.Z";
+    }
+    5%
+    {
+        content: "A.Za";
+    }
+    6%
+    {
+        content: "A.Zai";
+    }
+    7%
+    {
+        content: "A.Zain";
+    }
+    28%
+    {
+        content: "A.Zain";
+    }
+    29%
+    {
+        content: "A.Zai";
+    }
+    30%
+    {
+        content: "A.Za";
+    }
+    31%
+    {
+        content: "A.Z";
+    }
+    32%
+    {
+        content: "A.";
+    }
+    33%
+    {
+        content: "A";
+    }
+    34%
+    {
+        content: "";
+    }
+    35% { 
+        content: ""; 
+    } 
+    36%
+    {
+        content: "A";
+    }
+    37%
+    {
+        content: "A.";
+    }
+    38%
+    {
+        content: "A.H";
+    }
+    39%
+    {
+        content: "A.Ha";
+    }
+    40%
+    {
+        content: "A.Hai";
+    }
+    41%
+    {
+        content: "A.Hait";
+    }
+    42%
+    {
+        content: "A.Haith";
+    }
+    43%
+    {
+        content: "A.Haitha";
+    }
+    44%
+    {
+        content: "A.Haitham";
+    }
+    60%
+    {
+        content: "A.Haitham";
+    }
+    61%
+    {
+        content: "A.Haitha";
+    }
+    62%
+    {
+        content: "A.Haith";
+    }
+    63%
+    {
+        content: "A.Hait";
+    }
+    64% { 
+        content: "A.Hai"; 
+    } 
+    65%
+    {
+        content: "A.Ha";
+    }
+    66%
+    {
+        content: "A.H";
+    }
+    67%
+    {
+        content: "A.";
+    }
+    68%
+    {
+        content: "A";
+    }
+    69%
+    {
+        content: "";
+    }
+    70%
+    {
+        content: "K";
+    }
+    71%
+    {
+        content: "K.";
+    }
+    72%
+    {
+        content: "K.A";
+    }
+    73%
+    {
+        content: "K.Ah";
+    }
+    74%
+    {
+        content: "K.Ahm";
+    }
+    75%
+    {
+        content: "K.Ahme";
+    }
+    76%
+    {
+        content: "K.Ahmed";
+    }
+    90%
+    {
+        content: "K.Ahmed";
+    }
+    91%
+    {
+        content: "K.Ahme";
+    }
+    92%
+    {
+        content: "K.Ahm";
+    }
+    93%
+    {
+        content: "K.Ah";
+    }
+     94%
+    {
+        content: "K.A";
+    }
+    95%
+    {
+        content: "K.";
+    }
+   96%
+    {
+        content: "K";
+    }
+    97%
+    {
+        content: "";
+    } 
+} 
+.bodi{
+    overflow: auto;
+    display: none !important;
+}
 
 
 
 @media(max-width: 480px) {
+.boxo
+{
+    display: none;
+}
 
+    .bodi
+{
+    display: block !important;
+}
+.bodi img
+{
+    width: 300px;
+    height: 400px;
+}
     .test::after {
         content: "";
         position: absolute;
@@ -676,63 +913,5 @@ body {
         background-color: gray;
     }
 
-    .cardMe {
-        max-height: 100vh;
-        overflow: hidden;
-        padding: 20px;
-    }
-
-    .cardText {
-        transform: translateY(-190px) scale(0.8) !important;
-
-    }
-
-    .cardImage {
-        transform: translate(0px, -0px);
-        transition-duration: 0.2s;
-        width: 600px;
-        height: 300px;
-        transform: rotate(0deg) !important;
-        overflow: hidden;
-    }
-
-    .cardImage2 {
-        transition-duration: 0.2s;
-        width: 600px;
-        height: 400px;
-        transform: rotate(0deg);
-        overflow: hidden;
-        transform: translate(0px, -120px) !important;
-    }
-
-    .cardMe:hover .cardImage {
-        transform: translate(0px, 0px);
-    }
-
-
-    .cardMe:hover .cardImage2 {
-        transform: translate(0px, 0px);
-    }
-
-    .cardMe:hover .cardText {
-        transform: translateY(-190px) scale(0.9) !important;
-    }
-
-    .cardText2 {
-        transform: translateY(-290px) scale(0.8) !important;
-    }
-
-    .cardMe:hover .cardText2 {
-        transform: translateY(-290px) scale(0.9) !important;
-    }
-    .special
-    {
-        font-size: 20px !important;
-    }
-
-    .cardMe {
-        width: 100%;
-        max-height: 850px;
-
-    }
+    
 }
